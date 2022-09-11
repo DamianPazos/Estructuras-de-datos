@@ -8,20 +8,17 @@ class Cola:
     
     # Metodos
     
-    # Encolar - Se agrega un elemento en la cola
+    # encolar - Se agrega un elemento en la cola
     def encolar(self, dato):
         self.__c.append(dato)
     
-    # Desencolar - Se elimina el primer elemento de la cola    
+    # desencolar - Se elimina el primer elemento de la cola    
     def desencolar(self):
         return self.__c.pop(0)
     
-    # EsVacia - Se verifica si la cola es vacia o no
+    # esVacia - Se verifica si la cola es vacia o no
     def esVacia(self):
-        if len(self.__c) == 0:
-            return True
-        else: 
-            return False
+        return len(self.__c) == 0
         
     # getPrimerDato - Se devuelve el valor del primer dato
     def getPrimerDato(self):
